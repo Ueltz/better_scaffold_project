@@ -7,7 +7,7 @@ public class GameStateManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Map1");
     }
 
     public void Quit()

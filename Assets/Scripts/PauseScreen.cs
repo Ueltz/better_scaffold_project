@@ -30,6 +30,7 @@ public class PauseScreen : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        AudioListener.pause = false;
 
     }
 
@@ -38,6 +39,8 @@ public class PauseScreen : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        AudioListener.pause = true;
+        Debug.Log(Time.timeScale.ToString());
     }
 
     public void LoadMenu()

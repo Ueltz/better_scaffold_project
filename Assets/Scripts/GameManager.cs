@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
             }
         }else
          {
-            if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
+            if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy && !PauseScreen.GameIsPaused)
              {
                  resultsScreen.SetActive(true);
 
