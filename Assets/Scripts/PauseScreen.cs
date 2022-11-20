@@ -16,7 +16,7 @@ public class PauseScreen : MonoBehaviour
         {
             if (GameIsPaused)
             {
-                Resume();
+                StartCoroutine(Resume());
             }
             else
             {
@@ -25,9 +25,10 @@ public class PauseScreen : MonoBehaviour
         }
     }
 
-    public void Resume()
+    public IEnumerator Resume()
     {
         pauseMenuUI.SetActive(false);
+        yield return new WaitForSecondsRealtime(3);
         Time.timeScale = 1f;
         GameIsPaused = false;
         AudioListener.pause = false;
