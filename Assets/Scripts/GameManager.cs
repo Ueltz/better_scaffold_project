@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     public GameObject scene1;
     public GameObject scene2;
     public GameObject scene3;
+    public GameObject finalScene;
 
     public int currentMultiplier;
     public int multiplierTracker;
@@ -51,7 +52,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > 112f)
+        if (Time.time > 233.5f)
+        {
+            scene3.SetActive(false);
+            finalScene.SetActive(true);
+        }
+        else if (Time.time > 112f)
         {
             scene2.SetActive(false);
             scene3.SetActive(true);
