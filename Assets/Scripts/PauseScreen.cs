@@ -16,7 +16,7 @@ public class PauseScreen : MonoBehaviour
         {
             if (GameIsPaused)
             {
-                Resume();
+                StartCoroutine(Resume());
             }
             else
             {
@@ -25,11 +25,13 @@ public class PauseScreen : MonoBehaviour
         }
     }
 
-    public void Resume()
+    public IEnumerator Resume()
     {
         pauseMenuUI.SetActive(false);
+        yield return new WaitForSecondsRealtime(3);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        AudioListener.pause = false;
 
     }
 
@@ -38,6 +40,8 @@ public class PauseScreen : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        AudioListener.pause = true;
+        Debug.Log(Time.timeScale.ToString());
     }
 
     public void LoadMenu()
@@ -49,5 +53,10 @@ public class PauseScreen : MonoBehaviour
     {
         Debug.Log("Quit game.");
         Application.Quit();
+    }
+
+    public void ResumeButton()
+    {
+        StartCoroutine(Resume());
     }
 }
