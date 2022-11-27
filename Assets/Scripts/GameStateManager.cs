@@ -7,7 +7,7 @@ public class GameStateManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Testing");
     }
 
     public void Quit()
@@ -18,10 +18,5 @@ public class GameStateManager : MonoBehaviour
     public static void GameOver()
     {
         SceneManager.LoadScene("GameOver");
-    }
-
-    public void Pause()
-    {
-        SceneManager.LoadScene("PauseScreen");
     }
 }
