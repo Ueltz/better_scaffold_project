@@ -29,6 +29,10 @@ public class GameManager : MonoBehaviour
     public GameObject resultsScreen;
     public Text percentHitText, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText;
 
+    public GameObject scene1;
+    public GameObject scene2;
+    public GameObject scene3;
+
     public int currentMultiplier;
     public int multiplierTracker;
     public int[] multiplierThresholds;
@@ -47,6 +51,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.time > 112f)
+        {
+            scene2.SetActive(false);
+            scene3.SetActive(true);
+        } else if (Time.time > 50f)
+        {
+            scene1.SetActive(false);
+            scene2.SetActive(true);
+        }
         if (display_score < currentScore)
         {
             if ((currentScore - display_score) <= 25)
