@@ -1562,7 +1562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.118621826}
+  m_AnchoredPosition: {x: 0, y: -0.11859131}
   m_SizeDelta: {x: -747.9, y: -92.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634710730
@@ -1811,7 +1811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00024414062, y: 0.000030517578}
+  m_AnchoredPosition: {x: -0.00024414062, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679922473
@@ -3958,13 +3958,13 @@ MonoBehaviour:
   missedHits: 0
   time_before: 0
   resultsScreen: {fileID: 634710728}
-  percentHitText: {fileID: 948460150}
-  normalsText: {fileID: 2025984930}
-  goodsText: {fileID: 254031718}
-  perfectsText: {fileID: 1180027312}
-  missesText: {fileID: 45434481}
-  rankText: {fileID: 2021604084}
-  finalScoreText: {fileID: 2132212729}
+  percentHitText: {fileID: 1888083667}
+  normalsText: {fileID: 271757491}
+  goodsText: {fileID: 663391174}
+  perfectsText: {fileID: 1022656448}
+  missesText: {fileID: 52188246}
+  rankText: {fileID: 1742442121}
+  finalScoreText: {fileID: 370396588}
   scene1: {fileID: 2024177121}
   scene2: {fileID: 1728515722}
   scene3: {fileID: 806150885}
