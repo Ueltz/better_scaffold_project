@@ -979,7 +979,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 350553431}
         m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: EnterInstructions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -19,4 +19,9 @@ public class GameStateManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+
+    public static void EnterInstructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
 }
