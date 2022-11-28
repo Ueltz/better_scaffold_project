@@ -15,13 +15,18 @@ public class GameStateManager : MonoBehaviour
         Application.Quit();
     }
 
-    public static void GameOver()
+    public static void Menu()
     {
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("Menu");
     }
 
     public static void EnterInstructions()
     {
         SceneManager.LoadScene("Instructions");
+    }
+
+    public static void EndCredits()
+    {
+        SceneManager.LoadScene("EndCredits");
     }
 }

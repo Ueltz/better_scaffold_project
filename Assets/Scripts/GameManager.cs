@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - time_before > 233.5f)
+        if (Time.time - time_before > 237f)
         {
             scene3.SetActive(false);
             finalScene.SetActive(true);
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
             }
         }else
          {
-            if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy && !PauseScreen.GameIsPaused)
+            if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy && !PauseScreen.GameIsPaused && Time.time - time_before > 247f)
              {
                  resultsScreen.SetActive(true);
 
