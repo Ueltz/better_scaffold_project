@@ -12,7 +12,7 @@ public class InstructionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > 5f)
+        if (Time.time > 10f)
         {
             instruction1.SetActive(false);
             instruction2.SetActive(true);
