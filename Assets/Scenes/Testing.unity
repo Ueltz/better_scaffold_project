@@ -2144,7 +2144,7 @@ MonoBehaviour:
   lane_2: {fileID: 532048310}
   lane_3: {fileID: 1817154976}
   lane_4: {fileID: 710761882}
-  beatMap: {fileID: 4900000, guid: 5a787d19f3d816549aba1d6d063e9fc7, type: 3}
+  beatMap: {fileID: 4900000, guid: c0e0c76eec9543c4aa2b2311567c512a, type: 3}
   bpmChanges: 5a00000080000000
   bpmChangeTimes:
   - 51

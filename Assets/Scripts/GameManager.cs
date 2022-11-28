@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public float goodHits;
     public float missedHits;
     private float display_score;
+    public float time_before;
     public GameObject resultsScreen;
     public Text percentHitText, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText;
 
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        time_before = Time.time;
         instance = this;
         display_score = 0;
         scoreText.text = "Score: 0";
@@ -52,16 +54,16 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > 233.5f)
+        if (Time.time - time_before > 233.5f)
         {
             scene3.SetActive(false);
             finalScene.SetActive(true);
         }
-        else if (Time.time > 112f)
+        else if (Time.time - time_before > 112f)
         {
             scene2.SetActive(false);
             scene3.SetActive(true);
-        } else if (Time.time > 50f)
+        } else if (Time.time - time_before > 51f)
         {
             scene1.SetActive(false);
             scene2.SetActive(true);
